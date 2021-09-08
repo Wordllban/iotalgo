@@ -26,4 +26,6 @@ Visual presentation
 ---
 
 ## Installation
-You could just download the project and open index.html file, click right mouse button and select "Inspect", so in the right side of the browser you got a console! Nice, let's try to print heapSort(*yourArray*)! 
+  + Download the project and open index.html file
+  + Click right mouse button and select "Inspect"
+  + Print `heapSort(inputArray)` in console and press Enter
