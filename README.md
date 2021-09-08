@@ -22,3 +22,8 @@ Visual presentation
   + sort in descending order of sorted array in ascending order
   + sort in ascending order of sorted array in descending order
   + sort in descending order of sorted array in descending order
+
+---
+
+## Installation
+You could just download the project and open index.html file, click right mouse button and select "Inspect", so in the right side of the browser you got a console! Nice, let's try to print heapSort(*yourArray*)! 
