@@ -68,6 +68,7 @@ function heapSort(arr, sortOrder = "asc") {
         comparisons: 0, 
         swaps: 0 
     }
+
     if(sortOrder === "asc" ) {
         while (i >= 0) {
             heapifyMax(arr, length, i, counter);
@@ -101,9 +102,6 @@ function heapSort(arr, sortOrder = "asc") {
     counter.executionTime = endTime - startTime
     console.log("HeapSort")
     console.log("Sorted Array:", ...arr);
-    
-    return arr, counter;
+    console.log("counters:", counter);
+    return arr;
 }
-let arr = [4, 2, 9, 7, 1, 3, 8, 0, 5, 6];
-let counter = heapSort(arr);
-console.log("counters:", counter);
