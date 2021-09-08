@@ -4,7 +4,7 @@
 
 ## Task
 Implement a sorting algorithm - HeapSort(ascending/descending)
-![Algorithm's gif](https://upload.wikimedia.org/wikipedia/commons/1/1b/Sorting_heapsort_anim.gif")
+![Algorithm's gif](https://upload.wikimedia.org/wikipedia/commons/1/1b/Sorting_heapsort_anim.gif)
 
   ### Result output
   + Algorithm's name
