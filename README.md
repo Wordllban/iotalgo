@@ -28,4 +28,4 @@ Visual presentation
 ## Installation
   + Download the project and open index.html file
   + Click right mouse button and select "Inspect"
-  + Print `heapSort(inputArray)` in console and press Enter
+  + Print `heapSort(inputArray)` in console and press Enter *(inputArray example: [2, 5, 7, -9, 0])*
