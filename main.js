@@ -82,6 +82,7 @@ class DoublyLinkedList {
         return firstElement;
     }
 
+    // check is deque empty
     isEmpty() {
         if(!this.head || !this.tail) {
             return console.log('Is deque empty', true); 
