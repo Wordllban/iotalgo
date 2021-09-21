@@ -32,7 +32,8 @@ class DoublyLinkedList {
 
     // delete last element and return his value
     pop() {
-        console.log(this.tail);
+        let lastElement = this.tail;
+        console.log(lastElement);
         if(!this.head) return undefined;
         let temp = this.tail;
         if(this.length === 1) {
@@ -44,7 +45,7 @@ class DoublyLinkedList {
             temp.prev = null;
         }
         this.length--;
-        return list;
+        return lastElement;
     }
 
     // add element in front
@@ -65,6 +66,8 @@ class DoublyLinkedList {
 
     // delete front element and return his value 
     shift() {
+        let firstElement = this.head;
+        console.log(firstElement);
         if(!this.head) return undefined;
         let temp = this.head;
         if(this.length === 1) {
@@ -76,23 +79,26 @@ class DoublyLinkedList {
             temp.next = null;
         }
         this.length--;
-        return this;
+        return firstElement;
     }
 
     isEmpty() {
         if(!this.head || !this.tail) {
-            return true;
+            return console.log('Is deque empty', true); 
         } else {
-            return false;
+            return console.log('Is deque empty', false);
         }
     }
 }
 
 
 let list = new DoublyLinkedList;
-list.unshift(1);
-list.unshift(2);
-list.unshift(3);
-console.log(`Is list empty: ${list.isEmpty()}`);
 
-console.log(list);
+list.push(1);
+list.push(2);
+list.push(3);
+list.unshift(0); 
+
+list.isEmpty();
+
+console.log('Current deque: ', list);
