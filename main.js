@@ -78,14 +78,21 @@ class DoublyLinkedList {
         this.length--;
         return this;
     }
+
+    isEmpty() {
+        if(!this.head || !this.tail) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
 
 
 let list = new DoublyLinkedList;
-list.push(1);
-list.push(2);
-list.push(3);
-list.push(4);
-list.shift();
+list.unshift(1);
+list.unshift(2);
+list.unshift(3);
+console.log(`Is list empty: ${list.isEmpty()}`);
 
 console.log(list);
