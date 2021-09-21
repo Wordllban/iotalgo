@@ -8,14 +8,14 @@ Implement Deque based on Doubly-linked list with basics methods thats belong to 
 
 ---
 
-### Requiered methods
-    + Unshift - add element in front
-    + Shift - delete front element and return his value
-    + Push - add element in back
-    + Pop - delete element in back and return his value
-    + isEmpty - check is deque empty
+  ### Requiered methods
+  + Unshift - add element in front
+  + Shift - delete front element and return his value
+  + Push - add element in back
+  + Pop - delete element in back and return his value
+  + isEmpty - check is deque empty    
 
-### Code must be covered with tests (60%+)
+  ### Code must be covered with tests (60%+)
 
 ---
 
