@@ -46,7 +46,7 @@ class DoublyLinkedList {
         this.length--;
         return list;
     }
-    
+
     // add element in front
     unshift(value) {
         let node = new Node(value);
@@ -63,14 +63,29 @@ class DoublyLinkedList {
         return this;
     }
 
+    // delete front element and return his value 
+    shift() {
+        if(!this.head) return undefined;
+        let temp = this.head;
+        if(this.length === 1) {
+            this.head = null;
+            this.tail = null;
+        } else {
+            this.head = temp.next;
+            this.head.prev = null;
+            temp.next = null;
+        }
+        this.length--;
+        return this;
+    }
 }
 
 
 let list = new DoublyLinkedList;
-/* list.push(1);
+list.push(1);
 list.push(2);
 list.push(3);
-list.push(4); */
-//list.pop();
-list.unshift(0);
+list.push(4);
+list.shift();
+
 console.log(list);
