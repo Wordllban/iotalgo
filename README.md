@@ -12,9 +12,9 @@
    The bugtrk .in input file consists of one line. It contains three numbers, separated
    space: N, W, H - number of leaves, width and height of the leaf, respectively.
    
-   • 1 ≤ N ≤ 1012
-   • 1 ≤ W ≤ 109
-   • 1 ≤ H ≤ 109
+   + 1 ≤ N ≤ 1012
+   + 1 ≤ W ≤ 109
+   + 1 ≤ H ≤ 109
 
 ### Output data
    The source bugtrk .out file must contain one number - the minimum side length
