@@ -25,24 +25,24 @@
 ## Examples
    + Example 1
    
-      `bugtrk .in
+      `bugtrk.in__
       10 2 3`
 
-      `bugtrk .out
+      `bugtrk.out__
       9`
    + Example 2
    
-      `bugtrk .in
+      `bugtrk.in__
       2 1000000000 999999999`
 
-      `bugtrk .out
+      `bugtrk.out__
       1999999998`
    + Example 3
    
-      `bugtrk .in
+      `bugtrk.in__
       4 1 1`
 
-      `bugtrk .out
+      `bugtrk .out__
       2`
    
    
