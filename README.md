@@ -25,24 +25,24 @@
 ## Examples
    + Example 1
    
-      `bugtrk.in <br />
-      10 2 3`
+      `bugtrk.in`
+      10 2 3
 
-      `bugtrk.out
-      9`
+      `bugtrk.out`
+      9
    + Example 2
    
-      `bugtrk.in
-      2 1000000000 999999999`
+      `bugtrk.in`
+      2 1000000000 999999999
 
-      `bugtrk.out
-      1999999998`
+      `bugtrk.out`
+      1999999998
    + Example 3
    
-      `bugtrk.in
-      4 1 1`
+      `bugtrk.in`
+      4 1 1
 
-      `bugtrk .out
-      2`
+      `bugtrk .out`
+      2
    
    
