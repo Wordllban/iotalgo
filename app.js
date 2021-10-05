@@ -51,3 +51,5 @@ fs.writeFile('bugtrk.out.txt', res.toString(), (err) => {
     if(err) throw err;
     console.log('The file has been saved!');
 });
+
+module.exports = findSquare;
