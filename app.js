@@ -1,3 +1,19 @@
+const fs = require('fs');
+
+const path = './bugtrk.in.txt'
+
+if (fs.existsSync(path)) {
+    console.log('Read file started!');
+    var data = fs.readFileSync(path, 'utf8').split(' ');
+    console.log('Read file succses!');
+} else {
+    console.log('File does not exists at path: ', path);
+}
+
+const N = data[0];
+const W = data[1];
+const H = data[2];
+
 // check if side x of square X can pack all N rectangles or not
 function bound(w, h, N, x) {   
     let pack = parseInt(x / w) * parseInt(x / h);
@@ -28,3 +44,10 @@ function findSquare(N, W, H) {
 
     return j;
 }
+
+const res = findSquare(N, W, H);
+console.log('File write started!');
+fs.writeFile('bugtrk.out.txt', res.toString(), (err) => {
+    if(err) throw err;
+    console.log('The file has been saved!');
+});
