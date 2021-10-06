@@ -10,9 +10,9 @@ if (fs.existsSync(path)) {
     console.log('File does not exists at path: ', path);
 }
 
-const N = data[0];
-const W = data[1];
-const H = data[2];
+const N = data[0]; // Number of rectangles
+const W = data[1]; // Width
+const H = data[2]; // Height
 
 // check if side x of square X can pack all N rectangles or not
 function bound(w, h, N, x) {   
