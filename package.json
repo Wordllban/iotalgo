@@ -1,0 +1,19 @@
+{
+  "name": "lab-5",
+  "version": "1.0.0",
+  "description": "My lab works of Algorithms classes as a student of \"Internet of Things\" program in Lviv Polytechnic National University.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wordllban/iotalgo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wordllban/iotalgo/issues"
+  },
+  "homepage": "https://github.com/Wordllban/iotalgo#readme"
+}
