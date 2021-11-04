@@ -4,7 +4,7 @@ let V = 5;
 // A utility function to find the vertex with
 // minimum key value, from the set of vertices
 // not yet included in MST
-function minKey(key, mstSet) {
+export function minKey(key, mstSet) {
     // Initialize min value
     let min = Number.MAX_VALUE;
     let min_index;
@@ -18,7 +18,7 @@ function minKey(key, mstSet) {
 
 // A utility function to print the
 // constructed MST stored in parent[]
-function printMST(parent, graph) {
+export function printMST(parent, graph) {
     console.log("Edge      Weight");
     for (let i = 1; i < V; i++)
         console.log(parent[i] + " - " + i + "        " + graph[i][parent[i]]);
@@ -27,7 +27,7 @@ function printMST(parent, graph) {
 // Function to construct and print MST for
 // a graph represented using adjacency
 // matrix representation
-function primMST(graph) {
+export function primMST(graph) {
     // Array to store constructed MST
     let parent = [];
     
@@ -68,9 +68,10 @@ function primMST(graph) {
             }
         }
     }
-
+    
     // print the constructed MST
     printMST(parent, graph);
+    return parent;
 }
 
 let graph = [
