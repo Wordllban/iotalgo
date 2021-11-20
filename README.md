@@ -5,7 +5,7 @@
    
 ---
 
-1. **Sort algorithms** and their analysis
+1. __Sort algorithms__ and their analysis
 2. **Data structures** and their functionality 
 3. Solve Math **Problem**
 4. **Graphs**
