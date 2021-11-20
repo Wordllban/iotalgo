@@ -22,6 +22,7 @@
 
 ## Example: 
 `In`:
+
 8 5
 
 0 3
@@ -38,7 +39,8 @@
 
 1 2
 
-3 1              
+3 1
+
 `Out`: 2
 
  ![Example image](https://github.com/Wordllban/iotalgo/blob/lab-4/readme-images/example.jpg)
