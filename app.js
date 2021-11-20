@@ -6,10 +6,10 @@ space complexity: O(subString) cause of prefix table
 */
 
 
-function buildPrefixTable(s) {
+export function buildPrefixTable(s) {
     const table = [0];
-    let i = 1;         // index in string - suffix
-    let j = 0;         // length of repeating prefix and suffix
+    let i = 1;                      // index in string - suffix
+    let j = 0;                      // length of repeating prefix and suffix
 
     while( i < s.length) {
         if(s[i]===s[j]) {
@@ -18,7 +18,7 @@ function buildPrefixTable(s) {
             i += 1;
         } else if (j > 0) {
             j = table[j - 1];
-        } else { // j = 0
+        } else {                    // j = 0
             table[i] = 0;
             i += 1;
         }
@@ -27,13 +27,13 @@ function buildPrefixTable(s) {
     return table
 }
 
-function searchSubString(string, substring) {
+export function searchSubString(string, substring) {
     // edge case: substring = "" -> 0
     if(substring === "") return 0;
 
     const prefixTable = buildPrefixTable(substring);
-    let i = 0;         // index in string
-    let j = 0;         // index in substring
+    let i = 0;                      // index in string
+    let j = 0;                      // index in substring
 
     while( i < string.length && j < substring.length) {
         if(string[i] === substring[j]) {
@@ -41,7 +41,7 @@ function searchSubString(string, substring) {
             j += 1;
         } else if(j> 0) {
             j = prefixTable[j-1];
-        } else { // j = 0
+        } else {                    // j = 0
             i += 1;
         }
     }
