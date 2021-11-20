@@ -7,6 +7,9 @@ Prim’s algorithm is a Greedy algorithm. It starts with an empty spanning tree.
 
 A group of edges that connects two set of vertices in a graph is called cut in graph theory. So, at every step of Prim’s algorithm, we find a cut (of two sets, one contains the vertices already included in MST and other contains rest of the vertices), pick the minimum weight edge from the cut and include this vertex to MST Set (the set that contains already included vertices).
 
+![Example image](https://github.com/Wordllban/iotalgo/blob/lab-5/readme-images/example.jpg)
+![Example result](https://github.com/Wordllban/iotalgo/blob/lab-5/readme-images/example_result.jpg)
+
 ---
 
 ## Complexity
