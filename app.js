@@ -81,6 +81,7 @@ Graph.prototype.shortestPath = function(graph, source, target) {
       console.log((source));  // you want to look for a cycle
       return;                 // when the source is equal to
     }                         // the target
+    
     var queue = [ source ],
         visited = { source: true }, // is node visited
         predecessor = {},           // prev nodes
@@ -88,11 +89,9 @@ Graph.prototype.shortestPath = function(graph, source, target) {
     while (tail < queue.length) {
         var u = queue[tail++],                          // Pop a vertex off the queue
         adjacencyList = graph.adjacencyList[u];
-        console.log('queue1: ', queue);
 
         for(var i = 0; i < adjacencyList.length; ++i) {
             var v = adjacencyList[i];                   // vertex
-            console.log('v vertex: ', v);
             if (visited[v]) {
                 continue;
             }                   // mark node as visited
@@ -114,7 +113,6 @@ Graph.prototype.shortestPath = function(graph, source, target) {
             
             predecessor[v] = u; // to remember prev nodes of current vertex
             queue.push(v);
-            console.log('queue2: ', queue);
         }
     }
 }
@@ -134,9 +132,10 @@ console.log('BFS result: ');
 const result = graph.bfs(startNode);
 console.log(result);
 
-const startForSearch = result.shift()
-const endForSearch = result.pop()
-console.log(startForSearch);
-console.log(endForSearch);
+const startForSearch = result.shift() // get start
+const endForSearch = result.pop() // get end
+
+console.log('Start for Search:', startForSearch);
+console.log('End for Search: ', endForSearch);
 
 console.log(graph.shortestPath(graph, startForSearch, endForSearch));
