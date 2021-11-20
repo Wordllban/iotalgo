@@ -60,7 +60,7 @@ export function primMST(graph) {
         // Consider only those vertices which are not
         // yet included in MST
         for (let v = 0; v < V; v++) {
-            // graph[u][v] is non zero only for adjacent vertices of m
+            // graph[u][v] is non zero only for adjacent vertices of mstSet
             // mstSet[v] is false for vertices not yet included in MST
             // Update the key only if graph[u][v] is smaller than key[v]
             if (graph[u][v] && mstSet[v] == false && graph[u][v] < key[v]) {
