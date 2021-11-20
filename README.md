@@ -9,6 +9,8 @@ For example, if `X == 5`, then the binary number `101110011` can be divided into
 
 Demonstrate that humans are smarter than beavers, and for a given binary number `N`, find the smallest number of pieces to break it into.
 
+---
+
 ### Input data:
    The first line contains X - a sequence of zeros and ones and N.
 
@@ -18,3 +20,16 @@ Demonstrate that humans are smarter than beavers, and for a given binary number 
 ### Limit:
    + `0 < len (X) < 100`
    + `0 < N < 100`
+
+---
+
+## Examples
+
+In: `101101101` `5`
+
+Out: `3`
+
+
+In: `1111101` `5`
+
+Out: `1`
