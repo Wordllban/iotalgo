@@ -8,7 +8,7 @@ Implement Deque based on Doubly-linked list with basics methods thats belong to 
 
 ---
 
-  ### Requiered methods
+  ### Required methods
   + Unshift - add element in front
   + Shift - delete front element and return his value
   + Push - add element in back
