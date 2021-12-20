@@ -1,4 +1,4 @@
-import { heapSort } from "../heapsort/heapsort.js";
+import { heapSort } from "../heap/heapsort.js";
 import chai from "chai";
 const expect = chai.expect;
 

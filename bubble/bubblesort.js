@@ -13,10 +13,8 @@ let bubbleSort = (arr) => {
             } 
         }
     } while(swapped);
-    console.log(arr);
-    return arr;
+
+    return console.log("\nsort result: ", arr, "\n");;
 }
-console.log("");
-console.log("sort result: ");
+
 bubbleSort([2, 3, 5, 4, 1])
-console.log("");
