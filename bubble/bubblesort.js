@@ -6,7 +6,7 @@ let bubbleSort = (arr) => {
         swapped = false;
         for (let i = 0; i < len; i++) {
             if(arr[i] > arr[i + 1]) {
-                let tmp = arr[i + 1];   // store var to swap
+                let tmp = arr[i];   // store var to swap
                 arr[i] = arr[i + 1];    // swap
                 arr[i + 1] = tmp;       // swap
                 swapped = true;
@@ -14,7 +14,7 @@ let bubbleSort = (arr) => {
         }
     } while(swapped);
 
-    return console.log("\nsort result: ", arr, "\n");;
+    return arr;
 }
 
-bubbleSort([2, 3, 5, 4, 1])
+console.log("\nsort result: ", bubbleSort([2, 3, 5, 4, 1]), "\n");
