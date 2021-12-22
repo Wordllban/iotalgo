@@ -1,0 +1,25 @@
+{
+  "name": "data-structures",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "implementation of must popular and used data structure with JavaScript(ES6+)",
+  "main": "main.js",
+  "scripts": {
+    "test": "mocha tests/structure.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wordllban/iotalgo.git"
+  },
+  "keywords": [
+    "Algorithms",
+    "Data Structure",
+    "JavaScript"
+  ],
+  "author": "Mininkov K.M.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Wordllban/iotalgo/issues"
+  },
+  "homepage": "https://github.com/Wordllban/iotalgo#readme"
+}
