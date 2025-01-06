@@ -1,7 +1,7 @@
 
 ## Algorithms & Data structures - using JavaScript
 
-   My lab works of Algorithms classes as a student of Computer Science(Internet of Things) program in Lviv Polytechnic National University.
+   My lab works of Algorithms classes as a student of System Engineering(Internet of Things) program in Lviv Polytechnic National University.
    
 ---
 
